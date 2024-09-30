@@ -4,10 +4,11 @@ import Layout from "./screens/layout";
 import React from "react";
 import App from "./App";
 import "./index.css";
-import Teams from "./screens/teams";
-import NewTeam from "./screens/new-team";
-import TeamDetail from "./screens/team-detail";
-import TeamEdit from "./screens/team-edit";
+
+import TeamDetail from "./screens/teams/team-detail";
+import TeamEdit from "./screens/teams/team-edit";
+import NewTeam from "./screens/teams/new-team";
+import Teams from "./screens/teams/teams";
 
 const router = createBrowserRouter([
   {
