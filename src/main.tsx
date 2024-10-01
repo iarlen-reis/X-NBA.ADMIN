@@ -9,6 +9,10 @@ import TeamDetail from "./screens/teams/team-detail";
 import TeamEdit from "./screens/teams/team-edit";
 import NewTeam from "./screens/teams/new-team";
 import Teams from "./screens/teams/teams";
+import Players from "./screens/players";
+import NewPlayer from "./screens/players/new-player";
+import PlayerDetail from "./screens/players/player-detail";
+import PlayerEdit from "./screens/players/player-edit";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +24,10 @@ const router = createBrowserRouter([
       { path: "/teams/new", element: <NewTeam /> },
       { path: "/teams/:id", element: <TeamDetail /> },
       { path: "/teams/:id/edit", element: <TeamEdit /> },
+      { path: "/players", element: <Players /> },
+      { path: "/players/new", element: <NewPlayer /> },
+      { path: "/players/:id", element: <PlayerDetail /> },
+      { path: "/players/:id/edit", element: <PlayerEdit /> },
     ],
   },
 ]);
