@@ -8,11 +8,13 @@ interface TeamProps {
   coach: string;
 }
 
-export function useGetAllTeams() {
+export function useGetAllTeams(league?: string) {
+  const hasLeague = league ? `?league=${league}` : "";
+
   return useQuery<TeamProps[]>({
     queryKey: ["teams"],
     queryFn: async () => {
-      const response = await api.get<TeamProps[]>("/teams");
+      const response = await api.get<TeamProps[]>(`/teams${hasLeague}`);
 
       return response.data;
     },
