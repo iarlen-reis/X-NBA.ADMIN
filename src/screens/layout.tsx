@@ -7,7 +7,7 @@ export default function Layout() {
   const queryClient = new QueryClient();
 
   return (
-    <div className="container mx-auto flex flex-col gap-6">
+    <div className="container mx-auto flex flex-col gap-6 pb-12">
       <QueryClientProvider client={queryClient}>
         <Header />
         <Outlet />
